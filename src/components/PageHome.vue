@@ -148,6 +148,7 @@ export default {
                     <h5 class="card-title">{{ realEstate.title }}</h5>
                     <p class="card-text">{{ realEstate.address }}, {{ realEstate.city }}</p>
                     <p class="card-text">€ {{ realEstate.price }}</p>
+                    <router-link :to="{ name: 'DettaglioImmobile', params: { id: realEstate.id } }" class="btn btn-primary">Visualizza Dettagli</router-link>
                   </div>
                 </div>
               </div>
